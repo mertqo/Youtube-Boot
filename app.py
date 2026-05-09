@@ -104,7 +104,7 @@ if st.button(
         with st.spinner("Video oluşturuluyor..."):
 
             process = subprocess.run(
-                ["py", "main.py"],
+                ["python", "main.py"],
                 input=video_topic,
                 text=True,
                 capture_output=True
