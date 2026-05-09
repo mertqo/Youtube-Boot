@@ -112,6 +112,9 @@ if st.button(
 
             st.text(process.stdout)
 
+            if process.stderr:
+            st.error(process.stderr)
+
             video_files = glob.glob(
                 f"{OUTPUT_DIR}/*.mp4"
             )
